@@ -1,4 +1,4 @@
-dateModified: 1716824244
+dateModified: 1716890324
 email:
   fromEmail: 12000770@student.pxl.be
   fromName: Werkpakket3MK
@@ -32,6 +32,7 @@ meta:
     34f7cd61-8b11-48df-a0db-411aefc48529: 'Public Schema' # Public Schema
     43e6a80a-6b3b-4e9e-9d82-3979683bf0ae: BookCovers # BookCovers
     63f8ba1e-2ca9-4896-837c-2e420e1832ea: Contact # Contact
+    65b9f577-8d4b-4ee8-9d46-59d5e9a4c069: 'Contact Form' # Contact Form
     074aab06-9f1d-445c-b3bd-0021dec41481: 'Product Detail' # Product Detail
     93a2d9f5-e92a-4f51-946e-d03ab611a8aa: Homepage # Homepage
     97a8f2ea-e095-4c6d-b4a2-1918b0bd6058: 'Products Image' # Products Image
@@ -42,15 +43,28 @@ meta:
     4601c264-f26e-47f9-9179-d929469357d1: Profiel # Profiel
     5295d502-c6ff-48e1-aeca-c3aeae76f674: Overzichtspagina # Overzichtspagina
     8026a632-47cd-479e-b10e-da70b61f068a: Genre # Genre
+    94183735-f8f4-4519-9d3c-dbf722b80004: 'Contact Form' # Contact Form
     b496724a-4f5b-448e-abf9-8c8a0fad49d7: Overzichtspagina # Overzichtspagina
     cb00a8c7-bd0e-4583-a31e-8ccf46b72369: 'Product Detail' # Product Detail
     d65b1f58-ebdc-4f21-a6b4-bf3c7b4b21e8: Price # Price
     d132d109-de40-4858-8e41-393bec88cb75: Books # Books
+    d380778d-841a-4bf0-9f7d-a98f5afb87ee: New # New
     db5b3729-7436-4bf0-8285-1ab5a943b829: ' Image' #  Image
     e52f1d17-a9bc-4097-b015-2da75e3f777b: Genre # Genre
     ed4fc427-ba8c-48e3-a719-55b9c6471900: AboutUs # AboutUs
     fbff62a5-6371-464d-8ade-3a325bcc94de: Werkpakket3MK # Werkpakket3MK
     fe9f12a0-0862-4a8e-9652-4e11f273e4f9: Bookauthor # Bookauthor
+plugins:
+  formie:
+    edition: standard
+    enabled: true
+    licenseKey: JEE85NNPACH1VT7FDBV73EN3
+    schemaVersion: 3.4.4
+  navigate:
+    edition: standard
+    enabled: true
+    licenseKey: CGNMHHBT7LYHTG0T5YJT0XPF
+    schemaVersion: 2.4.0
 system:
   edition: solo
   live: true

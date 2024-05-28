@@ -3,7 +3,7 @@ enableVersioning: true
 entryTypes:
   - b496724a-4f5b-448e-abf9-8c8a0fad49d7 # Overzichtspagina
 handle: overzichtspagina
-maxAuthors: 2
+maxAuthors: 1
 name: Overzichtspagina
 previewTargets:
   -

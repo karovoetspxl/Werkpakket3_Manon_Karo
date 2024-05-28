@@ -1,4 +1,4 @@
-<nav class="head">
+{#  <nav class="head">
     <div class="navbar">
         <a href="/  " class="nav-logo"><img src="assets/logo.png" alt="Logo"></a>
         <ul class="nav-menu">
@@ -20,5 +20,19 @@
             <span class="bar"></span>
             <span class="bar"></span>
         </div>
+    </div>
+</nav> #}
+
+{% set mainNavigation = craft.navigate.raw('mainNavigation') %}
+<nav class="head">
+    <div class="navbar">
+        <a href="/" class="nav-logo"><img src="assets/logo.png" alt="Logo"></a>
+        <ul class="nav-menu">
+            {% for node in mainNavigation %}
+                <li class="nav-item">
+                    <a href="{{ node.url }}">{{ node.name }}</a>
+                </li>
+            {% endfor %}
+        </ul>
     </div>
 </nav>
