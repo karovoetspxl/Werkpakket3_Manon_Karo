@@ -4,9 +4,12 @@
     {% set bookQuery = craft.entries().section('books').limit(6) %}
 
     {% set authorParam = craft.app.request.getParam('authors') %}
-    {#  {% set genreParam = craft.app.request.getParam('genre') %}#}
-
-    {% set selectedFilters = authorParam ? authorParam|split(',') : [] %}
+    {#  {% set genreParam = craft.app.request.getParam('genre') %} #}
+    {% if authorParam is iterable %}
+        {% set selectedFilters = authorParam %}
+    {% else %}
+        {% set selectedFilters = authorParam ? authorParam|split(',') : [] %}
+    {% endif %}
 
     {% if selectedFilters | length %}
         {% set bookQuery = bookQuery.relatedTo({ targetElement:selectedFilters, field: 'authors' }) %}
@@ -14,10 +17,10 @@
 
     {#  {% if genreParam | length %}
         {% set books = books.relatedTo({ targetElement:genreParam }) %}
-    {% endif %}#}
+    {% endif %} #}
 
     {% set authors = craft.entries.section('authors').all() %}
-    {#  {% set genres = craft.entries.section('genre').all() %}#}
+    {#  {% set genres = craft.entries.section('genre').all() %} #}
 
     <header class="header-products">
         <div class="products-headertekst">
@@ -38,17 +41,23 @@
     </header>
 
     <main class="main-products">
-        <div class="filter">
-            {% for author in authors %}
-                <button type="{{ author.id }}">{{ author.title }}</button>
-            {% endfor %}
+        <form style="width: 20%">
+            <div class="filter">
+                {% for author in authors %}
+                    {% set isSelected = author.id in selectedFilters %}
+                    <label>
+                        <input type="checkbox" name="authors[]" value="{{ author.id }}" {% if isSelected %} checked {% endif %} onchange="this.form.submit()">
+                        {{ author.title }}
+                    </label>
+                {% endfor %}
 
-            {% for genre in genres %}
-                <button type="{{ genre.id }}">{{ genre.title }}</button>
-            {% endfor %}
-
-            <button type="submit">Filter</button>
-        </div>
+                {#
+                {% for genre in genres %}
+                    <button type="{{ genre.id }}">{{ genre.title }}</button>
+                {% endfor %}
+                #}
+            </div>
+        </form>
 
         <div class="page">
             {% paginate bookQuery as pageInfo, pageEntries %}

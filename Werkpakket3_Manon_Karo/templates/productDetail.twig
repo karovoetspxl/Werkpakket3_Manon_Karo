@@ -3,9 +3,11 @@
 {% block content %}
     {% set slug = craft.app.request.getSegment(2) %}
     {% set book = craft.entries.section('books').slug(slug).one() %}
+    {% set image = book.image.one() %}
 
     {% if book %}
         <main class="main-fourthwing">
+            <img class="afb" src="{{ image.url }}" alt="{{ book.title }}">
             <div class="inhoud">
                 <h1>{{ book.title }}</h1>
                 <h3>{{ book.bookAuthor }}</h3>

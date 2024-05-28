@@ -37,20 +37,27 @@ $fontsm: 12px;
   justify-content: space-between;
   padding: 3%;
 
-  .filter {
-    width: 12%;
-    .category {
-      border: solid 2px grey;
-      border-radius: 1rem;
-      display: flex;
-      justify-content: center;
-      margin: 5%;
-      padding: 10%;
-      form {
+  form {
+    .filter {
+      label{
         display: flex;
-        flex-direction: column;
-        [type="checkbox"] {
-          vertical-align: middle;
+      }
+
+      .category {
+        border: solid 2px grey;
+        border-radius: 1rem;
+        display: flex;
+        justify-content: center;
+        margin: 5%;
+        padding: 10%;
+
+        form {
+          display: flex;
+          flex-direction: column;
+
+          [type="checkbox"] {
+            vertical-align: middle;
+          }
         }
       }
     }
@@ -111,15 +118,18 @@ $fontsm: 12px;
     display: flex;
     justify-content: center;
     margin-top: 3%;
+
     a {
       color: black;
       padding: 8px 16px;
       text-decoration: none;
-      &:hover{
+
+      &:hover {
         color: $colorh1;
       }
     }
-    .active{
+
+    .active {
       background-color: $colorh1;
       color: $colorh3;
       border-radius: 10%;
@@ -131,40 +141,50 @@ $fontsm: 12px;
 @media screen and (max-width: 768px) {
   .main-products {
     display: inline-block;
-    .filter{
+
+    .filter {
       width: 100%;
       display: flex;
       flex-direction: row;
-      .category{
+
+      .category {
         width: 50%;
         padding: 5%;
       }
     }
+
     .page {
       width: 100%;
+
       .book {
         display: inline-block;
         padding: 8%;
+
         .afb {
           width: 100%;
           display: flex;
           justify-content: center;
           margin: 8% 0;
+
           img {
             width: 50%;
           }
         }
+
         .inhoud {
           width: 100%;
           margin-bottom: 5%;
         }
-        .prijs{
+
+        .prijs {
           width: 100%;
-          a{
+
+          a {
             display: flex;
             justify-content: center;
             text-decoration: none;
-            button{
+
+            button {
               padding: 5% 20%;
               margin: 5%;
             }
