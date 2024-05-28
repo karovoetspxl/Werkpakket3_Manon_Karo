@@ -1,0 +1,65 @@
+color: null
+fieldLayouts:
+  68b4c9a9-48fe-4016-8985-2f621137521d:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 2b2dd625-ee57-4359-a130-24511cbee28c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 5b788220-8937-4242-a0d3-e925cc1baa01 # Profile Image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 470eb018-f017-43a6-8b19-a2740aa76b6c
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 1845e815-80a9-4a7e-9a48-fc0f9e77f2f8
+        userCondition: null
+handle: profiel
+hasTitleField: true
+icon: ''
+name: Profiel
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

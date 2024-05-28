@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - b496724a-4f5b-448e-abf9-8c8a0fad49d7 # Overzichtspagina
+handle: overzichtspagina
+maxAuthors: 2
+name: Overzichtspagina
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  fbff62a5-6371-464d-8ade-3a325bcc94de: # Werkpakket3MK
+    enabledByDefault: true
+    hasUrls: true
+    template: products.twig
+    uriFormat: overzichtspagina
+type: single

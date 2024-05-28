@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 93a2d9f5-e92a-4f51-946e-d03ab611a8aa # Homepage
+handle: startpagina
+maxAuthors: 2
+name: Startpagina
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  fbff62a5-6371-464d-8ade-3a325bcc94de: # Werkpakket3MK
+    enabledByDefault: true
+    hasUrls: true
+    template: index.twig
+    uriFormat: __home__
+type: single

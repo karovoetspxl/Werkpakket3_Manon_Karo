@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 4601c264-f26e-47f9-9179-d929469357d1 # Profiel
+handle: profiel
+maxAuthors: 2
+name: Profiel
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  fbff62a5-6371-464d-8ade-3a325bcc94de: # Werkpakket3MK
+    enabledByDefault: true
+    hasUrls: true
+    template: profile.twig
+    uriFormat: profiel
+type: single

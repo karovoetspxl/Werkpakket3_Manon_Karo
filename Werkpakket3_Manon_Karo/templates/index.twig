@@ -1,0 +1,67 @@
+{% extends '_layout.twig' %}
+{% block content %}
+
+    <header>
+        <div class="header-text">
+            <h1>Booktopia</h1>
+            <p>Where every page is a new adventure.</p>
+            <a href="products.twig">
+                <button>Shop here</button>
+            </a>
+        </div>
+
+        {% set heroImage = entry.heroImage.one() %}
+        {% if heroImage %}
+            <img src="{{ heroImage.url }}" alt="{{ heroImage.title }}">
+        {% endif %}
+    </header>
+
+    <main>
+        <div class="main-div-1">
+            <div>
+                <h2>Who are we?</h2>
+                <div class="div-p">
+                    <p>
+                        Welcome to Booktopia, your literary haven in the heart of Hasselt. We are more than just a
+                        store; we are a sanctuary for book lovers, a gateway to countless worlds, and a place where
+                        stories
+                        come to life.</p>
+                    <p>So, whether you're sipping a cup of coffee at home, waiting for your next meeting,
+                        or traveling to far-off destinations, your literary companions are just a few clicks away.
+                        Booktopia
+                        invites you to embark on a literary journey that knows no bounds. Immerse yourself
+                        in the stories, knowledge, and inspiration that our virtual bookstore has to offer. Start
+                        exploring
+                        the world of words with us today.</p>
+                </div>
+            </div>
+
+            {% set aboutus = entry.aboutus.one() %}
+            {% if aboutus %}
+                <img src="{{ aboutus.url }}" alt="{{ aboutus.title }}">
+            {% endif %}
+
+        </div>
+
+        <div class="main-div-2">
+            <h2>In the spotlight</h2>
+                {% set bookQuery = craft.entries().section('books').limit(3) %}
+
+                {% if bookQuery|length %}
+
+                    <div class="div2-boeken">
+                    {% for book in bookQuery %}
+                        {% set books = craft.entries.section('books').one() %}
+
+                        {% if books and books.image | length %}
+                            {% set image = book.image.one() %}
+
+                        {% endif %}
+                        {% include '_snippets/_highlightProduct.twig' %}
+                    {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+    </main>
+
+{% endblock %}

@@ -1,0 +1,140 @@
+color: null
+fieldLayouts:
+  23bc29e8-bd7a-4846-ad3a-36a64ac19021:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 4da377dc-a41a-45a1-907b-2500bc3ad421
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: fe9f12a0-0862-4a8e-9652-4e11f273e4f9 # Bookauthor
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 138458f7-9350-4328-9135-d803f75dbacf
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 3254cfc7-d5a2-4151-b8a8-5e799a93450e # Description
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ba699f7f-80a3-49ac-8dcc-dd46ac5c718f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: db5b3729-7436-4bf0-8285-1ab5a943b829 #  Image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d9384429-9043-46be-b215-6a5b0b2fbe28
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d65b1f58-ebdc-4f21-a6b4-bf3c7b4b21e8 # Price
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d0987eb8-7a0d-444a-812b-cc84997d6f01
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 015f35b2-6849-4277-b9dc-2788aa0758bf # Authors
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3022cf9b-21cb-44c5-8fbc-738e3c197cce
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 8d4fc8c8-91d4-44f6-9480-39783cd823e0 # Genre
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ef3a4beb-6386-42dc-9c17-53598ceb3c9a
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: f9e4ddf8-98be-412e-a697-48d96b0a7b7e
+        userCondition: null
+handle: books
+hasTitleField: true
+icon: ''
+name: Books
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -1,0 +1,30 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - d132d109-de40-4858-8e41-393bec88cb75 # Books
+handle: books
+maxAuthors: 1
+name: Books
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  fbff62a5-6371-464d-8ade-3a325bcc94de: # Werkpakket3MK
+    enabledByDefault: true
+    hasUrls: true
+    template: products.twig
+    uriFormat: 'books/{slug}'
+structure:
+  maxLevels: null
+  uid: bbc71f57-d987-4e39-8655-22fcd0a15219
+type: structure

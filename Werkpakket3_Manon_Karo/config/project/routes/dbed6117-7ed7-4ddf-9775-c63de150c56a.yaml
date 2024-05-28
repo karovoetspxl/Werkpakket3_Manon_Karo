@@ -1,0 +1,6 @@
+siteUid: null
+sortOrder: 1
+template: books/productDetail
+uriParts:
+  - books/<slug>
+uriPattern: books/<slug>

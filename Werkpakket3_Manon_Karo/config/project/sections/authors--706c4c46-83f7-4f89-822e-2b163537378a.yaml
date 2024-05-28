@@ -1,0 +1,30 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 0eaf96d5-0ef4-43b6-97e2-90966eb0c57d # Authors
+handle: authors
+maxAuthors: 1
+name: Authors
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  fbff62a5-6371-464d-8ade-3a325bcc94de: # Werkpakket3MK
+    enabledByDefault: true
+    hasUrls: true
+    template: authors/_entry
+    uriFormat: 'authors/{slug}'
+structure:
+  maxLevels: 1
+  uid: 22bcbfec-910b-44ce-a7c0-a48a5e45c055
+type: structure

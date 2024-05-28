@@ -1,0 +1,30 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - cb00a8c7-bd0e-4583-a31e-8ccf46b72369 # Product Detail
+handle: productDetail
+maxAuthors: 1
+name: 'Product Detail'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  fbff62a5-6371-464d-8ade-3a325bcc94de: # Werkpakket3MK
+    enabledByDefault: true
+    hasUrls: true
+    template: productDetail.twig
+    uriFormat: 'product-detail/{slug}'
+structure:
+  maxLevels: null
+  uid: fcf8d3a0-c209-478f-82e6-352e4e669e9e
+type: structure

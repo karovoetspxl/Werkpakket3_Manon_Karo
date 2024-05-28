@@ -1,0 +1,36 @@
+columnSuffix: null
+handle: aboutus
+instructions: null
+name: AboutUs
+searchable: true
+settings:
+  allowSelfRelations: false
+  allowSubfolders: false
+  allowUploads: true
+  allowedKinds:
+    - image
+  branchLimit: null
+  defaultUploadLocationSource: 'volume:29b8e0f7-a3f4-45ff-b287-67d4bfa84155' # Bestanden
+  defaultUploadLocationSubpath: null
+  localizeRelations: false
+  maintainHierarchy: false
+  maxRelations: 1
+  minRelations: 1
+  previewMode: full
+  restrictFiles: true
+  restrictLocation: false
+  restrictedDefaultUploadSubpath: null
+  restrictedLocationSource: 'volume:29b8e0f7-a3f4-45ff-b287-67d4bfa84155' # Bestanden
+  restrictedLocationSubpath: /boekhome2
+  selectionLabel: 'Voeg een afbeelding toe'
+  showCardsInGrid: false
+  showSiteMenu: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  sources: '*'
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

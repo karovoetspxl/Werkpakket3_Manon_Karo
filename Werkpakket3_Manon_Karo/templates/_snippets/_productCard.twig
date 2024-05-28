@@ -1,0 +1,16 @@
+<div class="book">
+    <div class="afb"><img src="{{ image.url }}" alt=""></div>
+
+
+    <div class="inhoud">
+        <h2>{{ book.title }}</h2>
+        <h3>{{ book.bookAuthor }}</h3>
+        <p>{{ book.description }}</p>
+    </div>
+    <div class="prijs">
+        <h2>{{ book.price|money('be') }}</h2>
+        <a href="{{ book.url }}">
+            <button>View</button>
+        </a>
+    </div>
+</div>

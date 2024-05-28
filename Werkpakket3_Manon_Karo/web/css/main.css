@@ -1,0 +1,589 @@
+li {
+  list-style: none;
+}
+li a {
+  text-decoration: none;
+}
+
+.head {
+  border-bottom: 1px solid #E2E8F0;
+}
+.head .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+.head .navbar .nav-logo img {
+  width: 2rem;
+}
+.head .navbar .nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.head .navbar .nav-menu .nav-item {
+  margin-left: 5rem;
+}
+.head .navbar .nav-menu .nav-item .nav-link {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #475569;
+}
+.head .navbar .nav-menu .nav-item .nav-link:hover {
+  color: #C4A381;
+}
+.head .navbar .hamburger {
+  display: none;
+}
+.head .navbar .hamburger .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+
+@media screen and (max-width: 768px) {
+  .head .navbar .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+  .head .navbar .nav-menu.active {
+    left: 0;
+  }
+  .head .navbar .nav-menu.active .nav-item {
+    margin: 2.5rem 0;
+  }
+  .head .navbar .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .head .navbar .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .head .navbar .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .head .navbar .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 6% 6% 0 6%;
+  background-color: #F3EDE6;
+}
+header .header-text {
+  margin-top: 2%;
+}
+header .header-text h1 {
+  font-size: 60px;
+  color: #B2675E;
+  font-family: "Playfair Display", sans-serif;
+}
+header .header-text p {
+  font-size: 30px;
+  margin-top: 7%;
+}
+header .header-text a button {
+  text-decoration: none;
+  margin-top: 40%;
+  padding: 4% 6%;
+  border-radius: 1rem;
+  background-color: #B2675E;
+  color: #fff;
+  font-weight: bold;
+  font-size: large;
+  border: 3px solid #B2675E;
+  cursor: pointer;
+}
+header .header-text a button:hover {
+  background-color: #fff;
+  color: #B2675E;
+}
+header img {
+  width: 60%;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    display: inline-block;
+    text-align: center;
+  }
+  header .header-text {
+    text-align: left;
+    margin-top: 10%;
+  }
+  header .header-text p {
+    margin-top: 3%;
+  }
+  header .header-text button {
+    margin-top: 5%;
+  }
+  header img {
+    margin-top: 10%;
+    width: 100%;
+  }
+}
+main .main-div-1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 6%;
+}
+main .main-div-1 div h2 {
+  font-size: 30px;
+  font-family: "Playfair Display", sans-serif;
+  color: #B2675E;
+}
+main .main-div-1 div .div-p p {
+  margin-top: 4%;
+  margin-right: 30%;
+}
+main .main-div-1 img {
+  width: 30%;
+}
+main .main-div-2 {
+  padding: 6%;
+  background-color: #F3EDE6;
+  width: 100%;
+}
+main .main-div-2 h2 {
+  font-family: "Playfair Display", sans-serif;
+  color: #B2675E;
+  font-size: 30px;
+}
+main .main-div-2 .div2-boeken {
+  padding-top: 3%;
+  display: flex;
+  width: 100%;
+}
+main .main-div-2 .div2-boeken div {
+  background-color: #fff;
+  margin: 3%;
+  padding: 3%;
+  border-radius: 2rem;
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .main-div-2 .div2-boeken div .boek-info {
+  margin-top: 7%;
+  font-size: 30px;
+  font-weight: bold;
+}
+main .main-div-2 .div2-boeken div p {
+  font-size: large;
+  text-align: center;
+  font-weight: bold;
+}
+main .main-div-2 .div2-boeken div img {
+  width: 70%;
+}
+
+@media screen and (max-width: 768px) {
+  main .main-div-1 {
+    display: inline-block;
+    margin-top: 10%;
+    text-align: center;
+  }
+  main .main-div-1 div {
+    text-align: left;
+  }
+  main .main-div-1 div .div-p p {
+    margin-right: 0;
+  }
+  main .main-div-1 img {
+    margin-top: 15%;
+    width: 70%;
+  }
+  main .main-div-2 .div2-boeken {
+    flex-direction: column;
+    align-items: center;
+  }
+  main .main-div-2 .div2-boeken div {
+    width: 70%;
+  }
+  main .main-div-2 .div2-boeken div img {
+    width: 60%;
+  }
+}
+footer {
+  background-color: #644536;
+  color: #fff;
+  padding: 1% 5%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  font-size: 12px;
+}
+footer .f1 h3 {
+  margin-bottom: 3%;
+}
+footer .f1 p {
+  margin-left: 5%;
+  padding: 2%;
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    padding: 3%;
+    flex-direction: column;
+  }
+  footer div {
+    padding-bottom: 3%;
+  }
+}
+.header-products {
+  padding: 0;
+}
+.header-products .products-headertekst {
+  padding: 5%;
+}
+.header-products .products-headertekst h1 {
+  font-size: 30px;
+  color: #B2675E;
+  font-family: "Playfair Display", sans-serif;
+}
+.header-products .products-headertekst p {
+  margin-top: 3%;
+}
+.header-products .products-boekenrek {
+  height: 100%;
+  text-align: right;
+}
+
+.main-products {
+  display: flex;
+  justify-content: space-between;
+  padding: 3%;
+}
+.main-products .filter {
+  width: 12%;
+}
+.main-products .filter .category {
+  border: solid 2px grey;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  margin: 5%;
+  padding: 10%;
+}
+.main-products .filter .category form {
+  display: flex;
+  flex-direction: column;
+}
+.main-products .filter .category form [type=checkbox] {
+  vertical-align: middle;
+}
+.main-products .page {
+  width: 80%;
+}
+.main-products .page .book {
+  display: flex;
+  padding: 2% 0;
+  border-bottom: solid 2px #a8a8a8;
+}
+.main-products .page .book div {
+  margin-right: 5%;
+}
+.main-products .page .book .afb {
+  width: 15%;
+}
+.main-products .page .book .afb img {
+  width: 100%;
+}
+.main-products .page .book .inhoud {
+  width: 35%;
+}
+.main-products .page .book .inhoud p {
+  margin-top: 3%;
+}
+.main-products .page .book .prijs a button {
+  margin-top: 60%;
+  padding: 30% 80%;
+  border-radius: 1rem;
+  background-color: #B2675E;
+  color: #fff;
+  font-weight: bold;
+  font-size: large;
+  border: 3px solid #B2675E;
+  cursor: pointer;
+}
+.main-products .page .book .prijs a button:hover {
+  background-color: #fff;
+  color: #B2675E;
+}
+.main-products .pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+}
+.main-products .pagination a {
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+.main-products .pagination a:hover {
+  color: #B2675E;
+}
+.main-products .pagination .active {
+  background-color: #B2675E;
+  color: #fff;
+  border-radius: 10%;
+}
+
+@media screen and (max-width: 768px) {
+  .main-products {
+    display: inline-block;
+  }
+  .main-products .filter {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .main-products .filter .category {
+    width: 50%;
+    padding: 5%;
+  }
+  .main-products .page {
+    width: 100%;
+  }
+  .main-products .page .book {
+    display: inline-block;
+    padding: 8%;
+  }
+  .main-products .page .book .afb {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 8% 0;
+  }
+  .main-products .page .book .afb img {
+    width: 50%;
+  }
+  .main-products .page .book .inhoud {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  .main-products .page .book .prijs {
+    width: 100%;
+  }
+  .main-products .page .book .prijs a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+  }
+  .main-products .page .book .prijs a button {
+    padding: 5% 20%;
+    margin: 5%;
+  }
+}
+.header-fourthwing {
+  padding: 2% 10%;
+  width: 100%;
+}
+.header-fourthwing a {
+  text-decoration: none;
+  color: #B2675E;
+  font-size: 20px;
+  font-weight: bold;
+}
+.header-fourthwing a:hover {
+  color: #fff;
+}
+
+.main-fourthwing {
+  display: flex;
+  flex-direction: row;
+  padding: 8%;
+}
+.main-fourthwing div {
+  margin-right: 6%;
+}
+.main-fourthwing .afb {
+  width: 20%;
+}
+.main-fourthwing .afb img {
+  width: 100%;
+}
+.main-fourthwing .inhoud {
+  width: 40%;
+}
+.main-fourthwing .inhoud p {
+  margin-top: 3%;
+}
+.main-fourthwing .prijs {
+  width: 20%;
+}
+.main-fourthwing .prijs .aantal {
+  margin-top: 20%;
+}
+.main-fourthwing .prijs .aantal a {
+  color: black;
+  text-decoration: none;
+}
+.main-fourthwing .prijs .aantal a:hover {
+  color: #B2675E;
+}
+.main-fourthwing .prijs .aantal .cijfer {
+  border: 2px solid #B2675E;
+  padding: 5%;
+  border-radius: 1rem;
+  margin: 0 8%;
+}
+.main-fourthwing .prijs a button {
+  margin-top: 50%;
+  padding: 10% 20%;
+  border-radius: 1rem;
+  background-color: #B2675E;
+  color: #fff;
+  font-weight: bold;
+  font-size: large;
+  border: 3px solid #B2675E;
+  cursor: pointer;
+}
+.main-fourthwing .prijs a button:hover {
+  background-color: #fff;
+  color: #B2675E;
+}
+
+@media screen and (max-width: 768px) {
+  .main-fourthwing {
+    flex-direction: column;
+    padding-bottom: 10%;
+  }
+  .main-fourthwing .afb {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15%;
+    margin-top: 5%;
+  }
+  .main-fourthwing .afb img {
+    width: 60%;
+  }
+  .main-fourthwing .inhoud {
+    width: 100%;
+  }
+  .main-fourthwing .prijs {
+    width: 100%;
+    margin-top: 10%;
+  }
+  .main-fourthwing .prijs .aantal {
+    margin-top: 10%;
+  }
+  .main-fourthwing .prijs .aantal .cijfer {
+    margin: 0 5%;
+  }
+  .main-fourthwing .prijs .but {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+  }
+  .main-fourthwing .prijs .but button {
+    margin-top: 15%;
+    padding: 5% 10%;
+  }
+}
+.main-profile {
+  background-color: #F3EDE6;
+  padding: 5%;
+  display: flex;
+  justify-content: center;
+}
+.main-profile .form {
+  width: 80%;
+  display: flex;
+  background-color: #fff;
+  justify-content: space-between;
+  border-radius: 3rem;
+}
+.main-profile .form .login {
+  padding: 5%;
+  width: 50%;
+}
+.main-profile .form .login h1 {
+  color: #B2675E;
+  font-family: "Playfair Display", sans-serif;
+  margin-bottom: 15%;
+}
+.main-profile .form .login form label {
+  font-size: 20px;
+}
+.main-profile .form .login form input {
+  width: 100%;
+  padding: 2%;
+  margin-bottom: 8%;
+}
+.main-profile .form .login form .forgot {
+  text-decoration: underline;
+  display: flex;
+  justify-content: right;
+  color: #B2675E;
+  font-size: 17px;
+}
+.main-profile .form .login form .parent-submit-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 15%;
+}
+.main-profile .form .login form .parent-submit-btn button {
+  padding: 2% 10%;
+  border-radius: 1rem;
+  background-color: #B2675E;
+  color: #fff;
+  font-weight: bold;
+  font-size: large;
+  border: 3px solid #B2675E;
+  cursor: pointer;
+}
+.main-profile .form .login form .parent-submit-btn button:hover {
+  background-color: #fff;
+  color: #B2675E;
+}
+.main-profile .form .profile-img {
+  width: 50%;
+}
+.main-profile .form .profile-img img {
+  width: 100%;
+  border-radius: 0 3rem 3rem 0;
+}
+
+@media screen and (max-width: 768px) {
+  .main-profile .form {
+    display: inline-block;
+    margin: 15% 0;
+  }
+  .main-profile .form .login {
+    width: 100%;
+    padding: 10%;
+  }
+  .main-profile .form .profile-img {
+    width: 100%;
+  }
+  .main-profile .form .profile-img img {
+    border-radius: 0 0 3rem 3rem;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open sans", sans-serif;
+}
+
+/*# sourceMappingURL=main.css.map */

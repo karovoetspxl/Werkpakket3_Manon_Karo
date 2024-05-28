@@ -1,0 +1,77 @@
+{% extends '_layout.twig' %}
+{% block content %}
+
+<header class="header-products">
+    <div class="products-headertekst">
+        <h1>Shop</h1>
+        <p>Our virtual shelves are brimming with a diverse collection of books, covering every genre, topic, and age
+            group. From timeless classics to the latest bestsellers, from gripping mysteries to heartwarming romances,
+            and from insightful non-fiction to children's picture books, there's something for every reader within our
+            pages.</p>
+    </div>
+    <div class="products-boekenrek">
+        {% set productsImage = overzichtspagina.productsImage.one() %}
+        {% if productsImage %}
+            <img src="{{ productsImage.url }}" alt="{{ productsImage.title }}">
+        {% endif %}
+    </div>
+</header>
+
+<main class="main-products">
+    <div class="filter">
+        <div class="category">
+            <form method="post" action="" enctype="text/plain">
+                <label>Category</label><br>
+
+                <label for="thriller"><input type="checkbox" id="thriller" name="Laptop"
+                                             value="In bezit">Thriller</label>
+
+                <label for="fantasy"><input type="checkbox" id="fantasy" name="Tablet"
+                                            value="In bezit">Fantasy</label>
+
+                <label for="mystery"><input type="checkbox" id="mystery" name="Tablet"
+                                            value="In bezit">Mystery</label>
+            </form>
+        </div>
+        <div class="category">
+            <form method="post" action="" enctype="text/plain">
+                <label>Language</label><br>
+
+                <label for="english"><input type="checkbox" id="english" name="Laptop" value="In bezit">English</label>
+
+                <label for="dutch"><input type="checkbox" id="dutch" name="Tablet" value="In bezit">Dutch</label>
+
+                <label for="french"><input type="checkbox" id="french" name="Tablet" value="In bezit">French</label>
+            </form>
+        </div>
+    </div>
+
+    <div class="page">
+        {% set bookQuery = craft.entries().section('books').limit(8) %}
+        {% paginate bookQuery as pageInfo, pageEntries %}
+
+        {% if pageEntries|length %}
+
+
+
+                {% for book in pageEntries %}
+                    {% set books = craft.entries.section('books').one() %}
+
+                    {% if books and books.image | length %}
+                        {% set image = book.image.one() %}
+
+                    {% endif %}
+                {% include '_snippets/_productCard.twig' %}
+                {% endfor %}
+
+
+
+        {% endif %}
+        {% if pageInfo.prevUrl %}<a href="{{ pageInfo.prevUrl }}">Previous</a> {% endif %}
+        {% if pageInfo.nextUrl %}<a href="{{ pageInfo.nextUrl }}">Next</a> {% endif %}
+
+
+    </div>
+</main>
+
+{% endblock %}

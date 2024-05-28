@@ -1,0 +1,30 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 8026a632-47cd-479e-b10e-da70b61f068a # Genre
+handle: genre
+maxAuthors: 1
+name: Genre
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  fbff62a5-6371-464d-8ade-3a325bcc94de: # Werkpakket3MK
+    enabledByDefault: true
+    hasUrls: true
+    template: genre/_entry
+    uriFormat: 'genre/{slug}'
+structure:
+  maxLevels: null
+  uid: 9464dc29-8f95-431c-bde6-5829dff1756c
+type: structure
