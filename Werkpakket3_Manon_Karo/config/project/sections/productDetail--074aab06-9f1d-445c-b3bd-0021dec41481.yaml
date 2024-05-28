@@ -23,5 +23,5 @@ siteSettings:
     enabledByDefault: true
     hasUrls: true
     template: productDetail.twig
-    uriFormat: 'productDetail/{slug}'
+    uriFormat: 'products/{slug}'
 type: single

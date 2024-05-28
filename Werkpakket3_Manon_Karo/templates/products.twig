@@ -1,20 +1,23 @@
 {% extends '_layout.twig' %}
 
-{% set authorParam = craft.app.request.getParam('authors') %}
-{% set genreParam = craft.app.request.getParam('genre') %}
-
-        {% if authorParam | length %}
-            {% set books = books.relatedTo({ targetElement:authorParam }) %}
-        {% endif %}
-
-        {% if genreParam | length %}
-            {% set books = books.relatedTo({ targetElement:genreParam }) %}
-        {% endif %}
-
-{% set authors = craft.entries.section('authors').all() %}
-{% set genres = craft.entries.section('genre').all() %}
-
 {% block content %}
+    {% set bookQuery = craft.entries().section('books').limit(6) %}
+
+    {% set authorParam = craft.app.request.getParam('authors') %}
+    {#  {% set genreParam = craft.app.request.getParam('genre') %}#}
+
+    {% set selectedFilters = authorParam ? authorParam|split(',') : [] %}
+
+    {% if selectedFilters | length %}
+        {% set bookQuery = bookQuery.relatedTo({ targetElement:selectedFilters, field: 'authors' }) %}
+    {% endif %}
+
+    {#  {% if genreParam | length %}
+        {% set books = books.relatedTo({ targetElement:genreParam }) %}
+    {% endif %}#}
+
+    {% set authors = craft.entries.section('authors').all() %}
+    {#  {% set genres = craft.entries.section('genre').all() %}#}
 
     <header class="header-products">
         <div class="products-headertekst">
@@ -48,22 +51,20 @@
         </div>
 
         <div class="page">
-            {% set bookQuery = craft.entries().section('books').limit(6) %}
             {% paginate bookQuery as pageInfo, pageEntries %}
 
             {% if pageEntries|length %}
 
-
-
                 {% for book in pageEntries %}
-                    {% set books = craft.entries.section('books').one() %}
-
-                    {% if books and books.image | length %}
+                    {% if book.image | length %}
                         {% set image = book.image.one() %}
-
                     {% endif %}
-                    {% include '_snippets/_productCard.twig' %}
+                    {% include '_snippets/_productCard.twig' with {
+                        book: book,
+                        image: image
+                    } %}
                 {% endfor %}
+
 
 
 

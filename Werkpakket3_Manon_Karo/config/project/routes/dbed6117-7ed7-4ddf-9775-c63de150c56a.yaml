@@ -1,6 +1,6 @@
 siteUid: null
 sortOrder: 1
-template: books/productDetail
+template: books/productDetail.twig
 uriParts:
   - books/<slug>
 uriPattern: books/<slug>

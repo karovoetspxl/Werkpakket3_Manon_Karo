@@ -22,7 +22,7 @@ siteSettings:
   fbff62a5-6371-464d-8ade-3a325bcc94de: # Werkpakket3MK
     enabledByDefault: true
     hasUrls: true
-    template: products.twig
+    template: productDetail.twig
     uriFormat: 'books/{slug}'
 structure:
   maxLevels: null
