@@ -23,8 +23,5 @@ siteSettings:
     enabledByDefault: true
     hasUrls: true
     template: productDetail.twig
-    uriFormat: 'product-detail/{slug}'
-structure:
-  maxLevels: null
-  uid: fcf8d3a0-c209-478f-82e6-352e4e669e9e
-type: structure
+    uriFormat: 'productDetail/{slug}'
+type: single

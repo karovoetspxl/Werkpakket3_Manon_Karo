@@ -1,0 +1,18 @@
+{% set bookQuery = craft.entries().section('books').all() %}
+{% if bookQuery|length %}
+
+
+
+    {% for book in bookQuery %}
+        {% set books = craft.entries.section('books').one() %}
+
+        {% if books and books.image | length %}
+            {% set image = book.image.one() %}
+
+        {% endif %}
+        {% include '_snippets/_productCard.twig' %}
+    {% endfor %}
+
+
+
+{% endif %}

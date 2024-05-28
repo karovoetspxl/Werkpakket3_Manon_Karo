@@ -1,4 +1,4 @@
-dateModified: 1716890324
+dateModified: 1716913755
 email:
   fromEmail: 12000770@student.pxl.be
   fromName: Werkpakket3MK
@@ -21,12 +21,18 @@ fs:
 meta:
   __names__:
     0eaf96d5-0ef4-43b6-97e2-90966eb0c57d: Authors # Authors
+    2d57ea4c-cd01-4622-af55-c78dd289d496: Email # Email
+    2f7f11b6-e5b7-4647-8052-2fbcad875872: Address # Address
     4d849faf-00ba-47a6-a55d-4f272dc7871b: Startpagina # Startpagina
+    5aac108c-4924-4356-ba08-483531300f24: Icon # Icon
     5b788220-8937-4242-a0d3-e925cc1baa01: 'Profile Image' # Profile Image
     5c0cd73e-35c0-4b0b-af68-b06dc049dea7: Werkpakket3MK # Werkpakket3MK
+    7bbbc303-963e-411c-9513-b6788ffa26a4: 'New page' # New page
     7f24352a-4648-4340-a010-59a6de936762: Profiel # Profiel
     8d4fc8c8-91d4-44f6-9480-39783cd823e0: Genre # Genre
     015f35b2-6849-4277-b9dc-2788aa0758bf: Authors # Authors
+    16c8e6b7-ddc0-43db-8ef8-508094982232: Product # Product
+    017bb140-99dc-4165-a0eb-758ef4bae493: 'Social Media' # Social Media
     29b8e0f7-a3f4-45ff-b287-67d4bfa84155: Bestanden # Bestanden
     34e5e530-cb96-470e-a108-fd34078dc8af: 'Hero afbeelding' # Hero afbeelding
     34f7cd61-8b11-48df-a0db-411aefc48529: 'Public Schema' # Public Schema
@@ -36,6 +42,8 @@ meta:
     074aab06-9f1d-445c-b3bd-0021dec41481: 'Product Detail' # Product Detail
     93a2d9f5-e92a-4f51-946e-d03ab611a8aa: Homepage # Homepage
     97a8f2ea-e095-4c6d-b4a2-1918b0bd6058: 'Products Image' # Products Image
+    099aa5a2-2f17-4625-b19b-68c2c0870e2a: Text # Text
+    333e943e-6888-4e86-886c-125324f28623: Instagram # Instagram
     706c4c46-83f7-4f89-822e-2b163537378a: Authors # Authors
     2180c113-6968-495c-b80c-33a1de9a4f67: Books # Books
     2358d97c-4900-4980-b175-22759960966b: contact # contact
@@ -43,18 +51,36 @@ meta:
     4601c264-f26e-47f9-9179-d929469357d1: Profiel # Profiel
     5295d502-c6ff-48e1-aeca-c3aeae76f674: Overzichtspagina # Overzichtspagina
     8026a632-47cd-479e-b10e-da70b61f068a: Genre # Genre
+    9234cfdd-0244-4a96-bfea-221702d3a217: Blockbuilder # Blockbuilder
+    8198635a-ef63-4fd8-8c5f-4dd2acfd6f55: Phone # Phone
     94183735-f8f4-4519-9d3c-dbf722b80004: 'Contact Form' # Contact Form
+    a7bd259e-85b1-47fe-9c27-69a4107a48af: 'Footer Title' # Footer Title
+    a9a50d42-34f2-4160-908b-c960197b905c: 'Text + image' # Text + image
+    abe41a7f-371e-495b-a43d-1ac7400b86ed: Product # Product
+    b2225d4e-3888-468f-a304-0d868b609e77: Facebook # Facebook
     b496724a-4f5b-448e-abf9-8c8a0fad49d7: Overzichtspagina # Overzichtspagina
+    bde8a2b2-4587-4ff9-94b9-bc98b43873ea: 'New Page' # New Page
     cb00a8c7-bd0e-4583-a31e-8ccf46b72369: 'Product Detail' # Product Detail
+    cd479d1a-7995-42cb-92a7-2494667bd2d4: Form # Form
     d65b1f58-ebdc-4f21-a6b4-bf3c7b4b21e8: Price # Price
     d132d109-de40-4858-8e41-393bec88cb75: Books # Books
     d380778d-841a-4bf0-9f7d-a98f5afb87ee: New # New
     db5b3729-7436-4bf0-8285-1ab5a943b829: ' Image' #  Image
     e52f1d17-a9bc-4097-b015-2da75e3f777b: Genre # Genre
     ed4fc427-ba8c-48e3-a719-55b9c6471900: AboutUs # AboutUs
+    f0e7619f-2766-4964-8625-8803efa7dcee: Footer # Footer
     fbff62a5-6371-464d-8ade-3a325bcc94de: Werkpakket3MK # Werkpakket3MK
     fe9f12a0-0862-4a8e-9652-4e11f273e4f9: Bookauthor # Bookauthor
 plugins:
+  cookie-consent:
+    edition: standard
+    enabled: true
+    licenseKey: NI3XCG214OFSOM8OW9YVWX2U
+    schemaVersion: 1.5.0
+  dumper:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   formie:
     edition: standard
     enabled: true

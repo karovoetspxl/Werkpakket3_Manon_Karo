@@ -12,8 +12,9 @@ settings:
   minRelations: null
   selectionLabel: null
   showCardsInGrid: false
-  showSiteMenu: false
-  sources: '*'
+  showSiteMenu: true
+  sources:
+    - 'section:706c4c46-83f7-4f89-822e-2b163537378a' # Authors
   targetSiteId: null
   validateRelatedElements: false
   viewMode: list

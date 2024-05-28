@@ -1,16 +1,14 @@
 <footer>
     <div class="f1">
-        <h3>Contact</h3>
-        <p>karo.voets@student.pxl.be</p>
-        <p>+32 415 57 25 26</p>
+        <h3>{{ footer.title }}</h3>
+        <p>{{ footer.email }}</p>
+        <p>{{ footer.phone }}</p>
     </div>
     <div class="f2">
-        <p>Elfde-Liniestraat 24</p>
-        <p>3500 Hasselt</p>
+        <p>{{ footer.address }}</p>
     </div>
     <div class="f3">
-        <img src="" alt="instagram">
-        <img src="" alt="facebook">
-        <a href="" target="_blank"></a>
+        <img src="{{ socialMedia.instagram }}" alt="instagram">
+        <img src="{{ socialMedia.facebook }}" alt="facebook">
     </div>
 </footer>

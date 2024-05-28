@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6573b6f984dd027f5419d31217604070",
+    "content-hash": "c00bbe2a78b00d1baddbad7a4f68c11f",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -835,6 +835,52 @@
                 "validator"
             ],
             "time": "2023-10-06T06:47:41+00:00"
+        },
+        {
+            "name": "elleracompany/craft-cookie-consent",
+            "version": "5.0.1",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/elleracompany/craft-cookie-consent/zipball/b2f361066f056cf74c4ffb0350d067bf6c892718",
+                "reference": "b2f361066f056cf74c4ffb0350d067bf6c892718",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^5.0",
+                "ext-json": "*"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Cookie Consent",
+                "handle": "cookie-consent",
+                "documentationUrl": "https://github.com/elleracompany/craft-cookie-consent/blob/master/README.md",
+                "changelogUrl": "https://github.com/elleracompany/craft-cookie-consent/blob/master/CHANGELOG.md",
+                "class": "elleracompany\\cookieconsent\\CookieConsent"
+            },
+            "autoload": {
+                "psr-4": {
+                    "elleracompany\\cookieconsent\\": "src/"
+                }
+            },
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Ellera AS",
+                    "homepage": "https://ellera.no"
+                }
+            ],
+            "description": "Craft Cookie Consent Plugin",
+            "keywords": [
+                "consent",
+                "cookies",
+                "gdpr"
+            ],
+            "support": {
+                "email": "support@ellera.no"
+            },
+            "time": "2024-05-02T05:48:54+00:00"
         },
         {
             "name": "elvanto/litemoji",
@@ -4017,6 +4063,59 @@
                 "source": "https://github.com/stripe/stripe-php/tree/v13.18.0"
             },
             "time": "2024-04-09T21:08:04+00:00"
+        },
+        {
+            "name": "studioespresso/craft-dumper",
+            "version": "5.0.1",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/studioespresso/craft-dumper/zipball/3f5c1cfc44cffcefebe9c9b83e94c40b5b75dbc4",
+                "reference": "3f5c1cfc44cffcefebe9c9b83e94c40b5b75dbc4",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^4.0.0|^5.0.0-alpha"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Dumper",
+                "handle": "dumper",
+                "schemaVersion": "1.0.0",
+                "hasCpSettings": false,
+                "hasCpSection": false,
+                "changelogUrl": "https://raw.githubusercontent.com/studioespresso/craft-dumper/master/CHANGELOG.md",
+                "class": "studioespresso\\craftdumper\\CraftDumper"
+            },
+            "autoload": {
+                "psr-4": {
+                    "studioespresso\\craftdumper\\": "src/"
+                },
+                "files": [
+                    "src/helper.php"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Studio Espresso",
+                    "homepage": "https://www.studioespresso.co"
+                }
+            ],
+            "description": "Bringing symfony/VarDumper to Craft CMS",
+            "keywords": [
+                "cms",
+                "craft",
+                "craft-plugin",
+                "craftcms",
+                "dumper"
+            ],
+            "support": {
+                "docs": "https://github.com/studioespresso/craft-dumper/blob/master/README.md",
+                "issues": "https://github.com/studioespresso/craft-dumper/issues"
+            },
+            "time": "2024-02-21T14:48:06+00:00"
         },
         {
             "name": "studioespresso/craft-navigate",

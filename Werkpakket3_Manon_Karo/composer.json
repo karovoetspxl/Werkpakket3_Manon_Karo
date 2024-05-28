@@ -3,6 +3,8 @@
   "prefer-stable": true,
   "require": {
     "craftcms/cms": "5.1.7",
+    "elleracompany/craft-cookie-consent": "5.0.1",
+    "studioespresso/craft-dumper": "5.0.1",
     "studioespresso/craft-navigate": "5.1.2",
     "verbb/formie": "^3.0@beta",
     "vlucas/phpdotenv": "^5.4.0"

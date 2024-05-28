@@ -9,11 +9,14 @@
     <script defer src="navbar.js"></script>
 </head>
 <body>
-    {% include '_snippets/_nav.twig' %}
+{% hook 'after-body-start' %}
 
-    {% block content %}
-    {% endblock %}
 
-    {% include '_snippets/_footer.twig' %}
+{% include '_snippets/_nav.twig' %}
+
+{% block content %}
+{% endblock %}
+
+{% include '_snippets/_footer.twig' %}
 </body>
 </html>

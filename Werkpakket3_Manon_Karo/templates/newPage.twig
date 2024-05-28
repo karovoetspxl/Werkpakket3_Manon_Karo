@@ -1,0 +1,12 @@
+{% extends '_layout.twig' %}
+{% block content %}
+
+    {% set blocks = entry.blockbuilder.all() %}
+    {% for block in blocks %}
+        <div>
+            <div>
+                {% include '_snippets/_blocks/_' ~ block.type.handle %}
+            </div>
+        </div>
+    {% endfor %}
+{% endblock %}

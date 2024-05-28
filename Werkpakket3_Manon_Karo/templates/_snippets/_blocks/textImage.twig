@@ -1,0 +1,6 @@
+{% set Image = textImage.image.one() %}
+<div>
+    <h1>{{ textImage.title }}</h1>
+    <p>{{ textImage.text }}</p>
+    <img src="{{ Image.url }}" alt="Image">
+</div>

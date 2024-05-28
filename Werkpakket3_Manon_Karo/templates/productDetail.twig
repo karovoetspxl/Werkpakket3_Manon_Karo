@@ -1,9 +1,10 @@
 {% extends '_layout.twig' %}
 
 {% block content %}
+    {% set book = craft.entries.slug(craft.app.request.getSegment(2)).section('book').one() %}
 
 <main class="main-fourthwing">
-    <div class="afb"><img src="{{ image.url }}" alt="book.alt"></div>
+    {#  <div class="afb"><img src="{{ image.url }}" alt="book.alt"></div>#}
     <div class="inhoud">
         <h1>{{ book.title }}</h1>
         <h3>{{ book.bookAuthor}}</h3>
