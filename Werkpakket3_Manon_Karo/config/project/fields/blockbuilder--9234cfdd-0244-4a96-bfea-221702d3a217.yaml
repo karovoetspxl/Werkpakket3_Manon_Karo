@@ -1,0 +1,22 @@
+columnSuffix: null
+handle: blockbuilder
+instructions: null
+name: Blockbuilder
+searchable: true
+settings:
+  createButtonLabel: null
+  entryTypes:
+    - a9a50d42-34f2-4160-908b-c960197b905c # Text + image
+    - cd479d1a-7995-42cb-92a7-2494667bd2d4 # Form
+    - 16c8e6b7-ddc0-43db-8ef8-508094982232 # Product
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

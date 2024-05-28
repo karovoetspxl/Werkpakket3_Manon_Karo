@@ -1,0 +1,87 @@
+fieldLayouts:
+  e892cd2f-fc2d-459a-8f20-c60d070b3ad9:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: a7bd259e-85b1-47fe-9c27-69a4107a48af # Footer Title
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 960887e4-1f24-428e-b669-bc0b30f91397
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 2d57ea4c-cd01-4622-af55-c78dd289d496 # Email
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e906b39f-03e0-4a3b-b066-a696c9e67290
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 8198635a-ef63-4fd8-8c5f-4dd2acfd6f55 # Phone
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f8bf399c-fc66-4a9e-9f6a-60a7d92ad9e4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 2f7f11b6-e5b7-4647-8052-2fbcad875872 # Address
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d690969c-3199-4b18-949f-7b03e7529ae6
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 5aac108c-4924-4356-ba08-483531300f24 # Icon
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ce3edcd1-be3e-47c2-901e-058bc745da12
+            userCondition: null
+            warning: null
+            width: 100
+        name: footer
+        uid: c96d1c96-dad0-4c9e-87bb-e8589ade8d37
+        userCondition: null
+handle: footer
+name: Footer
+sortOrder: 2

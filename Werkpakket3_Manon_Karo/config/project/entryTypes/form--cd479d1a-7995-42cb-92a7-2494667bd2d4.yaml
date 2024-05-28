@@ -1,0 +1,80 @@
+color: null
+fieldLayouts:
+  7dc70c71-6ddc-468d-bc81-331a15d00b45:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: aa4ec46f-f910-4030-8e24-fda89c4760f7
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 3254cfc7-d5a2-4151-b8a8-5e799a93450e # Description
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 19136a9f-d2af-424e-910b-fed6dde76a59
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 94183735-f8f4-4519-9d3c-dbf722b80004 # Contact Form
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2c6effbc-0557-4c18-9ad0-9b7151c1680c
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: c49a6a83-3580-42bd-bbf3-e0f7f63ce7fe
+        userCondition: null
+handle: form
+hasTitleField: true
+icon: ''
+name: Form
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

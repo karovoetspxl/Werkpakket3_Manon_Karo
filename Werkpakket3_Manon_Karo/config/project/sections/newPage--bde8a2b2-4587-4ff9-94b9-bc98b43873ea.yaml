@@ -1,0 +1,30 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 7bbbc303-963e-411c-9513-b6788ffa26a4 # New page
+handle: newPage
+maxAuthors: 1
+name: 'New Page'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  fbff62a5-6371-464d-8ade-3a325bcc94de: # Werkpakket3MK
+    enabledByDefault: true
+    hasUrls: true
+    template: newPage.twig
+    uriFormat: 'new-page/{slug}'
+structure:
+  maxLevels: null
+  uid: 6b957698-a84e-48c3-9e4d-bcbae4f6e5b6
+type: structure
